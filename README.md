@@ -26,7 +26,7 @@ Before running the project, we have to ensure whether the following things are i
 4. Run the Truffle console: truffle console
 
 ## Inside the Truffle console, we can interact with the deployed contract using the following commands:
-1. Get the deployed contract instance:let instance = await SimpleBlockchain.deployed();
+1. Get the deployed contract instance: let instance = await SimpleBlockchain.deployed();
 2. Get the blockchain difficulty: 
              let difficulty = await instance.difficulty();
              console.log(difficulty.toString());
@@ -40,16 +40,22 @@ Before running the project, we have to ensure whether the following things are i
 
 ## Project Structure:
 
-simple-blockchain
-  contracts
+simple-blockchain/
+  
+  contracts/
       SimpleBlockchain.sol     # Smart contract code
-  migrations
+      
+  migrations/
       2_deploy_contracts.js     # Deployment script
-  test
+  
+  test/
       SimpleBlockchain.test.js  # Test cases (if any)
+  
   truffle-config.js             # Truffle configuration
+  
   package.json                  # Node dependencies
-  README.md                      # Project documentation
+  
+  README.md                     # Project documentation
 
 ## License
 This project is licensed under the MIT License.
